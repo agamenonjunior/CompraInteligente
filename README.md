@@ -19,3 +19,11 @@
 ## Comparativo com Apps ou Serviços Existentes
   
   - Pesquisa de Mercado:
+
+  - Tabela Comparativa:
+
+## Protótipo ou Esboço  (Wireframes)
+
+## Sitemap
+
+## Conclusão
