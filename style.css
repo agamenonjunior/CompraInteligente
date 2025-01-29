@@ -293,8 +293,8 @@ ul li:hover ul.drop{
     box-shadow: 0 0 5px 1px #3B3B3B;
 }
 .legenda{
-    font-size: .9rem;
-    color: rebeccapurple;
+    font-size: .7rem;font-weight: bold;
+    color: var(--Cor-secundaria);
 }
 .botao{
     margin: 5px;
