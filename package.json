@@ -1,0 +1,26 @@
+{
+  "name": "comprainteligente_node",
+  "version": "1.0.0",
+  "description": "Sistema web que auxilia usuários a criar e gerenciar listas de compras de maneira eficiente, automatizando a organização e oferecendo sugestões baseadas em histórico de compras.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agamenonjunior/CompraInteligente.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agamenonjunior/CompraInteligente/issues"
+  },
+  "homepage": "https://github.com/agamenonjunior/CompraInteligente#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-generator": "^4.16.1"
+  }
+}

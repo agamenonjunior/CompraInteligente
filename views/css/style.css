@@ -1,0 +1,326 @@
+/***
+Fonts
+***/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{margin: 0; padding: 0;}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+/***
+Variáveis
+**/
+
+:root{
+    --Cor-primaria:#65a525;
+    --Cor-secundaria:#3B3B3B;
+    --Cor-alternativa:#d9d9d9;
+    --Cor-fundo:#FFF;
+    --Texto-primario:#FFF;
+    --Texto-secundario:#797979;
+    --Footer:#3B3B3B;    
+    --texto-menu:#fff;
+    --texto-btn:#fff;
+    --fonte-principal: font-family: "Montserrat", serif;
+    --fonte-secundaria: "Roboto", serif;
+}
+
+/** Topo**/
+.header{
+    background: var(--Cor-primaria);
+    float: left; width: 100%; height: 50px;
+}
+.logo{
+    float: left;
+    margin: 5px;
+}.logo a{
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+    margin: 5px; padding: 5px;
+    color: var(--texto-menu);
+}
+.menu{
+float: right;
+
+}
+.menu ul {
+    margin: 5px; padding: 5px;
+}
+.menu ul li{
+display: inline-block; margin: 5px;
+}
+.menu ul li a{
+    text-decoration: none; color: var(--texto-menu);
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+
+/**banner**/
+.banner{
+    background: var(--Cor-fundo);
+}
+.cta1{
+    float: left;margin: 5px;padding: 5px; 
+    width: 770px; height: 312px;
+   
+}
+.cta1 h2{
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    margin: 25px;
+    font-size: 1.4rem;
+}
+.cta1 h2 i{
+    color: #65a525;
+}
+.cta1 a{
+    margin: 15px 25px;padding: 8px; 
+    text-decoration: none;
+    font-weight: bold;
+    background: var(--Cor-primaria);
+    color: var(--texto-btn);
+    border-radius: 15px;
+    transition: 1s;
+    box-shadow: 0 0 2px 0 #3B3B3B;
+    display: inline-block;
+}
+.cta1 a:hover{
+    background: #000;
+}
+.destaque{ 
+    margin: 5px;padding: 5px; 
+    float: left;
+}
+.destaque a img{
+    max-width: 300px;
+    height: 300px;
+}
+/** beneficios **/
+.beneficios{
+    margin: 50px 0 0 0;
+}
+.beneficios h3{
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    color: var(--Cor-primaria);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.beneficios ul{
+    list-style: none;
+}
+
+.beneficios ul li{
+    list-style: none;
+    min-height: 200px;
+    background: var(--Cor-alternativa);
+    margin: 5px;
+    transition: 0.5s;
+    border-radius: 20px 0 20px 0;
+}
+.beneficios ul li:hover{
+    background: var(--Cor-primaria);
+    color: var(--Texto-primario);
+    
+}
+.beneficios ul li h4{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    min-height: 100px;
+    display: inline-block;
+    padding: 10px; margin: 25px;
+}
+.beneficios ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px; margin: 10px 100px;
+    color: var(--texto-btn);
+    background: var(--Cor-secundaria);
+    border-radius: 20px;
+    transition: 1s;
+}
+.beneficios ul li a:hover{
+    background: #000;
+}
+.lista h4{
+ font-weight: bold;
+ font-size: 1.2rem;
+ color: var(--Cor-primaria);
+ margin: 15px;
+}
+.lista ul{ 
+    list-style:none;
+}
+.lista ul li{
+    margin: 5px;padding: 5px;
+    font-weight: bold;
+    color: var(--Cor-secundaria);
+}
+.lista i{
+    color: var(--Cor-primaria);
+    font-size: 1.2rem;
+}
+.jeito{
+    box-shadow: 1px 0 1px 0 #3B3B3B;
+    clear: both;
+}
+/***
+duvidas
+***/
+.duvidas{
+    margin: 35px 0;
+    clear: both;
+}
+.duvidas h4{margin: 0 0 35px 0; font-weight: bold;}
+.duvidas h4 span{color: var(--Cor-primaria);}
+
+/**
+rodape
+**/
+.rodape{
+    clear: both;
+    background: var(--Cor-primaria);
+    padding: 10px;
+    color: var(--Texto-primario);
+    display: block;
+    font-size: 0.9rem;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    
+}
+.rodape a{
+    text-decoration: none;
+    color: var(--Cor-secundaria);
+    
+}
+
+/***
+CADASTRO - LOGIN
+***/
+.painel-cadastro{
+    background: rgb(101,165,37);
+    background: linear-gradient(0deg, rgba(101,165,37,1) 0%, rgba(121,165,37,1) 100%);
+    float: left; width: 100%; height: 100vh;
+}
+.cadastro{   
+    width: 400px; min-height: 250px;
+    background: var(--Cor-fundo);
+    display: block;
+    margin: 5% auto;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px #3B3B3B;
+}
+.titulo{
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--Cor-primaria);
+    text-transform: uppercase;
+}
+
+/***
+PAINEL ADMINISTRATIVO
+***/
+.menu-dropdown{
+float: right;
+width: 600px;
+
+}
+.menu-dropdown ul{
+    background:var(--Cor-primaria);
+    float: left;
+    width: 600px;
+    position: absolute;
+    
+    }
+.menu-dropdown nav ul li{
+    padding: 8px; margin: 5px;
+
+}
+.menu-dropdown nav li{
+    display: inline-block;
+    
+}
+.menu-dropdown nav li a{
+    text-decoration: none;
+    color: var(--texto-btn);    
+    margin: 5px; padding: 5px;
+}
+.menu-dropdown nav li a:hover{
+    opacity: 0.7;
+}
+ul li ul.drop{
+    width: auto;
+    background:var(--Cor-primaria);
+    z-index: 9999;
+    display: none;
+    margin: 0;padding: 0;
+   
+}
+ul li ul.drop li{
+    display: block;
+    background:var(--Cor-primaria);
+    border-bottom: 1px solid #FFF;
+    
+}
+ul li:hover ul.drop{
+    display: block;
+    float: left;
+}
+.home{
+    display: flex;
+    min-height: 100vh;
+    background:var(--Cor-fundo);
+}
+.info{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    text-transform: capitalize;
+}
+.formulario{
+    width: 600px; min-height: 250px;
+    background: var(--Cor-fundo);
+    display: block;
+    margin: 5% auto;
+    box-shadow: 0 0 5px 1px #3B3B3B;
+}
+.legenda{
+    font-size: .7rem;font-weight: bold;
+    color: var(--Cor-secundaria);
+}
+.botao{
+    margin: 5px;
+}
+.lista{
+font-weight: bold;
+display: inline;
+font-family: var(--fonte-principal);
+font-size: 1rem; color:var(--Cor-secundaria);
+padding: 10px;
+}
+.links{
+    display: inline-block;
+    
+}
+.links a {
+    padding: 5px;margin: 5px 0;
+    opacity: 1;font-weight: bold;
+}
+.links a:hover{
+    opacity: 0.7;
+}
+.share{
+    padding: 5px;
+    display: block;
+    text-transform: lowercase;
+    font-size: 1.2rem;font-weight: bold;
+    color: var(--Cor-primaria);
+}
