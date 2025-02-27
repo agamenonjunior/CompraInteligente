@@ -14,8 +14,7 @@ Usuários que buscam otimizar sua rotina de compras, incluindo Mei, famílias, p
     - Autenticação de usuários com login e senha
     - Gerenciamento de Listas de Compras
     - Organização por Categorias
-    - Sugestões de Produtos
-    - Permitir filtrar os itens de uma lista por categoria ou por status
+
     
 
 ## Lista de Funcionalidades:
@@ -26,10 +25,6 @@ Usuários que buscam otimizar sua rotina de compras, incluindo Mei, famílias, p
     - Permitir a exclusão de listas.
     - Classificar automaticamente os itens adicionados a uma lista em categorias predefinidas (ex.: "Alimentos", "Higiene", "Bebidas").
     - Permitir que o usuário personalize as categorias
-    - Registrar o histórico de compras dos usuários, incluindo itens, frequência de compra e categorias.
-    - Sugerir automaticamente itens frequentes ao criar ou editar uma lista.
-    - Fornecer uma funcionalidade de busca para localizar itens ou listas rapidamente.
-
     
   
   - Funcionalidades Avançadas:
