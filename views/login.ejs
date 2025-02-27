@@ -19,19 +19,19 @@
     <div class="painel-cadastro">
         <div class="container">
             <div class="cadastro">
-                <form action="" method="post" class="form-floating">
+                <form action="/login" method="post" class="form-floating">
 
                      <div class="d-flex justify-content-center mb-5">
                      <strong class="mt-2 titulo">Login</strong>
                     </div>
 
                     <div class="form-floating mb-3 mt-3 p-2">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="Informe o seu e-mail"
+                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Informe o seu e-mail"
                             value="admin@ufma.br">
                         <label for="floatingInput">E-mail</label>
                     </div>
                     <div class="form-floating mb-3 mt-3 p-2">
-                        <input type="password" class="form-control" id="floatingPassword"
+                        <input type="password" name="senha" class="form-control" id="floatingPassword"
                             placeholder="Informe sua senha" value="123456">
                         <label for="floatingPassword">Senha</label>
                     </div>
@@ -39,10 +39,10 @@
                         <button type="submit" class="btn btn-success text-center">Entrar</button>
                     </div>
                     <div class="d-flex justify-content-center mb-3">
-                        <a href="cadastro.html" class="mt-2 mb-3">Cadastrar-se</a>
+                        <a href="/cadastro" class="mt-2 mb-3">Cadastrar-se</a>
                     </div>
                     <div class="d-flex justify-content-center mb-5">
-                        <a href="index.html" class="mb-3">Voltar ao Home</a>
+                        <a href="/index" class="mb-3">Voltar ao Home</a>
                     </div>
 
 

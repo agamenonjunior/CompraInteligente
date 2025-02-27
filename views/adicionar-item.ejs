@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Painel - Compra Inteligente - Editar Lista</title>
+    <title>Painel - Compra Inteligente - Cadastrar Lista</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,7 +13,7 @@
     <!--Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--CSS-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="header">
             <!-- Topo -->
             <div class="container">
-                <div class="logo"><a href="/index"><i class="bi bi-ui-checks-grid"></i> CompraInteligente</a></div>
+                <div class="logo"><a href="home.html"><i class="bi bi-ui-checks-grid"></i> CompraInteligente</a></div>
                 <div class="menu-dropdown">
                     <nav class="">
 
@@ -38,30 +38,28 @@
                 <div class="home">
 
                     <div class="formulario">
-                        <span class="titulo p-2 d-flex justify-content-center">Editar Lista</span>
+                        <span class="titulo p-2 d-flex justify-content-center">Cadastrar Lista</span>
                         <form action="" method="post">
                             <fieldset class="border p-2">
-                                <legend class="small legenda">digite o nome da Lista</legend>
-                                <% for(var i=0; i<listas.length; i++) {%>
-                                <input type="text" class="form-control" name="nome_lista" id=""
-                                    placeholder="Informe o nome do produto" value="<%= listas[i].nome_lista %>">
-                                <% } %>  
+                                <legend class="small legenda">Nome da Lista</legend>
+
+                                <input type="text" class="form-control" name="nome_lista" placeholder="Informe o nome da lista" id="">
+                                    
                             </fieldset>
 
                             <fieldset class="border p-2">
-                                <legend class="small legenda">Selecione um produto</legend>
+                                <legend class="small legenda">Selecione seus produtos</legend>
                                 <select name="nome_produto" class="form-select" multiple id="">
                                     <% for(var i=0; i<produtos.length; i++) {%>
-                                        <option value="<%= produtos[i].nome_produto %>"><%= produtos[i].nome_produto %></option>
-                                        <% } %> 
-                                       
+                                    <option value="<%= produtos[i].nome_produto %>"><%= produtos[i].nome_produto %></option>
+                                    <% } %> 
                                 </select>
                                     
                             </fieldset>
 
                             <div class="d-flex justify-content-center mb-2 mt-2">
                                 <button type="submit" class="botao btn btn-success text-center">Adicionar</button>
-                                <button type="submit" class="botao btn btn-outline-danger text-center">Limpar</button>
+                                <button type="reset" class="botao btn btn-outline-danger text-center">Limpar</button>
                                 <button type="submit" class="botao btn btn-primary text-center">Salvar</button>
                             </div>
 
@@ -81,21 +79,21 @@
                                     <td>Banana</td>
                                     <td>Frutas</td>
                                     <td>36</td>
-                                    <td class="text-center"><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
+                                    <td><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
                                   </tr>
                                   <tr>
                                     <th scope="row"><img src="img/uva.png" width="50" height="50" alt="Produto Uva" srcset=""></th>
                                     <td>Uva</td>
                                     <td>Frutas</td>
                                     <td>3</td>
-                                    <td class="text-center"><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
+                                    <td><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
                                   </tr>
                                   <tr>
                                     <th scope="row"><img src="img/veja.png" width="50" height="50" alt="" srcset=""></th>
                                     <td>Veja</td>
                                     <td>Produtos de Limpeza</td>
                                     <td>4</td>
-                                    <td class="text-center"><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
+                                    <td><a href="editar-categoria.html"><i class="bi bi-trash3 text-danger"></i></i></a></td>
                                   </tr>
                                 </tbody>
                               </table>

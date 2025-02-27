@@ -13,7 +13,7 @@
     <!--Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -39,48 +39,43 @@
 
                     <div class="formulario">
                         <span class="titulo p-2 d-flex justify-content-center">Editar Produto</span>
-                        <form action="" method="post">
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <% for(var i=0; i<produtos.length; i++) {%>
                             <fieldset class="border p-2">
                                 <legend class="small legenda">digite o nome do produto</legend>
-                                <input type="text" class="form-control" name="nome" id=""
-                                    placeholder="Informe o nome do produto" value="Maçã">
+                                <input type="text" class="form-control" valu name="nome_produto" id=""
+                                    placeholder="Informe o nome do produto" value="<%= produtos[i].nome_produto %>">
                                     
                             </fieldset>
 
                             <fieldset class="border p-2">
                                 <legend class="small legenda">digite a quantidade do produto</legend>
-                                <input type="number" class="form-control" name="quantidade" id=""
-                                    placeholder="Informe a quantidade do produto" value="20">
+                                <input type="number" class="form-control" name="quantidade_produto" id=""
+                                    placeholder="Informe a quantidade do produto" value="<%= produtos[i].quantidade_produto	 %>">
                                     
                             </fieldset>
 
                             <fieldset class="border p-2">
                                 <legend class="small legenda">Selecione uma Imagem para o produto</legend>
-                                <input type="file" class="form-control" name="imagem" id="">
+                                <input type="file" class="form-control" value="<%= produtos[i].imagem_produto %>" name="imagem_produto" id="">
                                     
                             </fieldset>
 
                             <fieldset class="border p-2">
                                 <legend class="small legenda">Selecione a Categoria do produto</legend>
                                 <select name="" class="form-select" id="">
-                                    <optgroup label="Frutas">
-                                        <option value="Banana">Banana</option>
-                                        <option value="Uva">Uva</option>
-                                        <option value="maca" selected>Maçã</option>
-                                    </optgroup>
-                                    <optgroup label="Limpeza">
-                                        <option value="sabao-em-po">Sabão em pó</option>
-                                        <option value="Amaciante">Amaciante</option>
-                                        <option value="agua-sanitaria">Água Sanitária</option>
-                                    </optgroup>
+                                    <optgroup label="Selecionada">                                        
+                                        <option value="<%= produtos[i].categoria_produto %>" selected><%= produtos[i].categoria_produto %></option>
+                                    </optgroup>                    
                                 </select>
                                     
                             </fieldset>
 
                             <div class="d-flex justify-content-center mb-2 mt-2">
                                 <button type="submit" class="botao btn btn-success text-center">Editar</button>
-                                <button type="submit" class="botao btn btn-outline-danger text-center">Limpar</button>
+                                <button type="reset" class="botao btn btn-outline-danger text-center">Limpar</button>
                             </div>
+                            <% } %>
                         </form>
                         
                            
